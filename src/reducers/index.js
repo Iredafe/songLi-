@@ -1,4 +1,4 @@
-import {combineReducers} from 'react-redux'
+import {combineReducers} from 'redux'
 
 
 const songsReducer =()=>{
@@ -17,4 +17,4 @@ const selectedSongReducer=(selectedSong=null,action)=>{
      return selectedSong;
 };
 
-combineReducers({})
+export default combineReducers({})
