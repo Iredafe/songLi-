@@ -17,4 +17,8 @@ const selectedSongReducer=(selectedSong=null,action)=>{
      return selectedSong;
 };
 
-export default combineReducers({})
+
+export default combineReducers({
+    songs: songsReducer,
+    selectedSong: selectedSongReducer
+  });
