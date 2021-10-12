@@ -6,3 +6,9 @@ const songsReducer =()=>{
         {title:'I Want it that way', duration: '1:15'}
     ];
 };
+
+const selectedSongReducer=(selectedSong=null,action)=>{
+    if(action.title==='SONG_SELECTED'){
+        return action.payload;
+    }
+}
