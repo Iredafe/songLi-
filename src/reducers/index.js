@@ -1,3 +1,6 @@
+import {combineReducers} from 'react-redux'
+
+
 const songsReducer =()=>{
     return [
         {title: 'No Scrubs', duration: '4:05'},
@@ -10,5 +13,8 @@ const songsReducer =()=>{
 const selectedSongReducer=(selectedSong=null,action)=>{
     if(action.title==='SONG_SELECTED'){
         return action.payload;
-    }
-}
+    };
+     return selectedSong;
+};
+
+combineReducers({})
