@@ -5,16 +5,17 @@ const SongDetail = ({song})=>{
     console.log(song);
     if(!song){
         return <div>Select a Song</div>
-    }
-    return <div>
+    }else{
+        return <div>
         <h3> Details For : </h3>
         <p>
             Title: {song.title}
-        </p> 
-        <p>
+        <br/>
             Duration: {song.duration}
         </p>
     </div>
+
+    }
 };
 
 const mapStateToProps = state=>{
